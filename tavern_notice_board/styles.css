@@ -1,0 +1,144 @@
+
+body {
+    background-color: #3d2314;
+    font-family: Georgia, serif;
+    color: #fdf5e6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.tavern-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 16px;
+    border-radius: 6px;
+}
+
+.notices-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 24px 0 16px;
+}
+
+.notice-illustration {
+    width: 72px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.notices-heading #notices {
+    margin: 0;
+}
+
+@media (max-width: 400px) {
+    .notice-illustration {
+        width: 56px;
+    }
+}
+
+h1, #notices {
+    text-align: center;
+    color: #f3e5c8;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #551b02;
+    margin-bottom: 15px;
+}
+
+.notice-form, .message-card {
+    background-color: #fdf5e6;
+    color: #2b1810;
+    border: 2px solid #8b5a2b;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #3d2314;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8b5a2b;
+    border-radius: 4px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff8eb;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #8b5a2b;
+    color: #fdf5e6;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #6a4420;
+}
+
+.message-card {
+    position: relative;
+}
+
+.message-author {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #8b5a2b;
+    border-bottom: 1px solid #d4c5b0;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.message-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.message-date {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 12px;
+    text-align: right;
+}
+
+.empty-msg {
+    text-align: center;
+    font-style: italic;
+    color: #d4c5b0;
+}
